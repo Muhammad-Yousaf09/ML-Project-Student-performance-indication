@@ -91,7 +91,7 @@ The model uses the following input features:
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
+git clone <[repository-ur](https://github.com/Muhammad-Yousaf09/ML-Project-Student-performance-indication)l>
 cd student-performance-prediction
 ```
 
