@@ -1,12 +1,8 @@
-pandas
-numpy
-gunicorn
-scikit-learn
-matplotlib
-seaborn
-ipykernel
-catboost
-xgboost
-dill
+
 flask
-#-e .
+gunicorn
+numpy
+pandas
+scikit-learn
+``
+
