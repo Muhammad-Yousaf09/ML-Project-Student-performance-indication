@@ -2,37 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Prediction Form</title>
+    <title>Student Performance Predictor</title>
 </head>
+
 <body>
+
     <h1>Student Performance Prediction</h1>
+
     <form method="POST" action="/predictdata">
+
+        <!-- Gender -->
         <label>Gender:</label>
-        <input type="text" name="gender" required><br><br>
+        <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br><br>
 
+        <!-- Ethnicity -->
         <label>Ethnicity:</label>
-        <input type="text" name="ethnicity" required><br><br>
+        <select name="ethnicity" required>
+            <option value="group A">Group A</option>
+            <option value="group B">Group B</option>
+            <option value="group C">Group C</option>
+            <option value="group D">Group D</option>
+            <option value="group E">Group E</option>
+        </select>
+        <br><br>
 
+        <!-- Parental Education -->
         <label>Parental Level of Education:</label>
-        <input type="text" name="parental_level_of_education" required><br><br>
+        <select name="parental_level_of_education" required>
+            <option value="high school">High School</option>
+            <option value="associate's degree">Associate's Degree</option>
+            <option value="bachelor's degree">Bachelor's Degree</option>
+            <option value="master's degree">Master's Degree</option>
+        </select>
+        <br><br>
 
+        <!-- Lunch -->
         <label>Lunch:</label>
-        <input type="text" name="lunch" required><br><br>
+        <select name="lunch" required>
+            <option value="standard">Standard</option>
+            <option value="free/reduced">Free/Reduced</option>
+        </select>
+        <br><br>
 
+        <!-- Test Prep -->
         <label>Test Preparation Course:</label>
-        <input type="text" name="test_preparation_course" required><br><br>
+        <select name="test_preparation_course" required>
+            <option value="completed">Completed</option>
+            <option value="none">None</option>
+        </select>
+        <br><br>
 
+        <!-- Scores -->
         <label>Reading Score:</label>
-        <input type="number" name="reading_score" required><br><br>
+        <input type="number" name="reading_score" min="0" max="100" required>
+        <br><br>
 
         <label>Writing Score:</label>
-        <input type="number" name="writing_score" required><br><br>
+        <input type="number" name="writing_score" min="0" max="100" required>
+        <br><br>
 
         <input type="submit" value="Predict">
+
     </form>
 
+    <!-- ✅ Display result -->
     {% if results is defined %}
         <h2>Predicted Math Score: {{ results }}</h2>
     {% endif %}
+
 </body>
 </html>
+``
