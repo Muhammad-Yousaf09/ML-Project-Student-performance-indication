@@ -193,6 +193,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+catboost_info/
+notebook/
+*.ipynb
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
 
 # Cursor
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
