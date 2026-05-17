@@ -1,8 +1,10 @@
 setuptools
 wheel
 flask
+gunicorn
 scikit-learn
 pandas
 numpy
 dill
+catboost
 -e .
